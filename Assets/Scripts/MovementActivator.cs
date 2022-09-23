@@ -20,6 +20,7 @@ public class MovementActivator : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Is triggered");
         objectToActivate.GetComponent<MoveObject>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject>().enabled = true;
     }

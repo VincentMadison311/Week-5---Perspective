@@ -18,12 +18,12 @@ public class MovementActivator8 : MonoBehaviour
         
     }
 
-    private void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider DoorRight)
     {
         objectToActivate.GetComponent<MoveObject8>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject8>().enabled = true;
     }
-    private void pnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider DoorLeft)
     {
         objectToActivate.GetComponent<MoveObject8>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject8>().enabled = true;

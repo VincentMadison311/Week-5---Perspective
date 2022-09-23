@@ -18,12 +18,12 @@ public class MovementActivator7 : MonoBehaviour
         
     }
 
-    private void onTriggerEnter(Collider other)
+    private void onTriggerEnter(Collider DoorRight)
     {
         objectToActivate.GetComponent<MoveObject7>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject7>().enabled = true;
     }
-    private void pnTriggerExit(Collider other)
+    private void pnTriggerExit(Collider DoorLeft)
     {
         objectToActivate.GetComponent<MoveObject7>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject7>().enabled = true;
