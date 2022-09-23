@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementActivator9 : MonoBehaviour
 {
     [SerializeField] GameObject objectToActivate;
-    GameObject otherObjectToActivate;
+    [SerializeField] GameObject otherObjectToActivate;
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +15,15 @@ public class MovementActivator9 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    private void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider DoorRight)
     {
         objectToActivate.GetComponent<MoveObject9>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject9>().enabled = true;
     }
-    private void pnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider DoorLeft)
     {
         objectToActivate.GetComponent<MoveObject9>().enabled = true;
         otherObjectToActivate.GetComponent<MoveObject9>().enabled = true;
